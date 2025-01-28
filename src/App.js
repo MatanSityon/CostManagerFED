@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AddCostItemForm from "./components/AddCostItemForm";
 import ReportTable from "./components/ReportTable";
 import PieChart from "./components/PieChart";
-import IDBWrapper from "./utils/idb";
+import IDBWrapper from "./utils/idbUI";
 import { Container, Typography, Box, Paper } from "@mui/material";
 
 /**

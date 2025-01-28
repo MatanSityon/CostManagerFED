@@ -61,6 +61,7 @@ const ReportTable = ({ data, generateReport, handleDelete, handleUpdate }) => {
      */
     const handleEditSubmit = () => {
         handleUpdate(editItem);
+        generateReport(month, year);
         closeEditDialog();
     };
 
@@ -149,11 +150,7 @@ const ReportTable = ({ data, generateReport, handleDelete, handleUpdate }) => {
                         </TableBody>
                     </Table>
                 </TableContainer>
-            ) : (
-                <Typography align="center" sx={{ mt: 2 }}>
-                    No data available for the selected month and year.
-                </Typography>
-            )}
+            ) : null}
 
             {/* Edit Dialog */}
             {editItem && (
