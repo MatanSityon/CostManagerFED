@@ -85,7 +85,7 @@ const ReportTable = ({ data, generateReport, handleDelete, handleUpdate }) => {
                     <Select value={month} onChange={(e) => setMonth(e.target.value)} label="Month">
                         {[...Array(12).keys()].map((m) => (
                             <MenuItem key={m + 1} value={m + 1}>
-                                {new Date(0, m).toLocaleString("default", { month: "long" })}
+                                {new Date(0, m).toLocaleString("en-US", { month: "long" })}
                             </MenuItem>
                         ))}
                     </Select>
